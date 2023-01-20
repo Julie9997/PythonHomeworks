@@ -3,6 +3,8 @@ import random
 def brain(total, candies):
     if candies == 1:
         n = random.randint(1, 29)
+    elif total <= 57:
+        n = total - 29
     else:
         n = 30 - candies
     if total <= 28:
