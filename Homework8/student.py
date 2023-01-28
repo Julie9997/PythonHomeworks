@@ -4,7 +4,7 @@ def see_marks():
     lastname = input('Введите фамилию: ')
     count = 0
     for sub in m.subjects:
-        with open(f'{sub}.txt',  'r', encoding='utf-8') as file:
+        with open(f'Homework8/{sub}.txt',  'r', encoding='utf-8') as file:
             lines = file.readlines()
             subcount = 0
             for i in range(len(lines)):
